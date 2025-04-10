@@ -1,6 +1,10 @@
 package com.chasky.chaskyapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
@@ -12,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class SelectOptionAuthActivity extends AppCompatActivity {
 
     Toolbar mToolbar;
+    Button mButtonGoToLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +27,19 @@ public class SelectOptionAuthActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Seleccionar opcion");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        mButtonGoToLogin = findViewById(R.id.btnGoToLogin);
+        mButtonGoToLogin.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                goToLogin();
+            }
+        });
+
+    }
+
+    public void goToLogin() {
+        Intent intent = new Intent(SelectOptionAuthActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 }

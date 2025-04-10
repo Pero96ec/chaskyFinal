@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "967776761241",
+    "project_id": "chaskygas-d8de7",
+    "storage_bucket": "chaskygas-d8de7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967776761241:android:fea6313e2a010d5d918f08",
+        "android_client_info": {
+          "package_name": "com.chasky.chaskyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU8Vqws34v-2bwJCRG-5DYcwhxJ5EGcZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
